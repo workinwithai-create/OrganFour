@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OrganFour</title>
+  <meta name="description" content="Four bars of live organ so a stuck loop finally has a human chair, not another pad. Piano, nylon, upright, kit, trumpet, violin." />
+  <meta name="theme-color" content="#120e0c" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23120e0c'/%3E%3Crect x='6' y='8' width='4' height='18' rx='1' fill='%23f3ead9'/%3E%3Crect x='12' y='12' width='4' height='14' rx='1' fill='%23e07a3a'/%3E%3Crect x='18' y='8' width='4' height='18' rx='1' fill='%23f3ead9'/%3E%3Crect x='24' y='14' width='3' height='12' rx='1' fill='%23f3ead9'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560&family=Outfit:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="desk">
+    <p class="kicker">Finish desk</p>
+    <h1>OrganFour</h1>
+    <p class="quiet">The loop has drums and a pad. It still does not feel like a room. Four bars of live organ give the chorus a chair that breathes. Live chairs only.</p>
+    <p id="status" class="quiet">Tap play to seat the live chairs.</p>
+    <div class="transport">
+      <button id="playA" class="primary" type="button">Dry pocket</button>
+      <button id="playB" type="button">Full twelve</button>
+      <button id="play8" type="button">Organ + return</button>
+      <button id="stop" type="button">Stop</button>
+    </div>
+    <section id="bars" class="panel" aria-label="Twelve bar form"></section>
+    <div class="grid">
+      <section id="grooves" class="panel"></section>
+      <section id="moves" class="panel"></section>
+    </div>
+    <section class="panel">
+      <div class="transport">
+        <button id="copy" type="button">Copy punch list</button>
+        <button id="midi" type="button">Download MIDI</button>
+      </div>
+      <pre id="punch"></pre>
+    </section>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>
